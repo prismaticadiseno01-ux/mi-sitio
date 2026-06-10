@@ -10,6 +10,9 @@
     /* Light Mode */
     --primary-blue: #0052FF;
     --secondary-purple: #7B3FF2;
+    --primary-blue-light: #579dff;
+    --secondary-purple-light: #a962ff;
+    --button-text-dark: #0F1419;
     --light-white: #F8F9FF;
     --dark-text: #1a1a1a;
     --light-text: #666666;
@@ -23,8 +26,11 @@
 
 body.dark-mode {
     /* Dark Mode */
-    --primary-blue: #006aff;
-    --secondary-purple: #7f30df;
+    --primary-blue: #579dff;
+    --secondary-purple: #a962ff;
+    --primary-blue-light: #579dff;
+    --secondary-purple-light: #a962ff;
+    --button-text-dark: #0F1419;
     --light-white: #1a1f3a;
     --dark-text: #E8EAED;
     --light-text: #B0B3B8;
@@ -161,9 +167,16 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav-links a:hover {
     color: var(--primary-blue);
+}
+
+.nav-links a.active {
+    color: var(--primary-blue-light);
+}
+
+body.dark-mode .nav-links a.active {
+    color: var(--secondary-purple-light);
 }
 
 .nav-links a.active::after {
@@ -225,24 +238,26 @@ h1, h2, h3, h4, h5, h6 {
 
 .cta-button {
     background: linear-gradient(135deg, var(--primary-blue), var(--secondary-purple));
-    color: white;
+    color: var(--button-text-dark);
 }
 
 .cta-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(0, 82, 255, 0.3);
+    color: white;
 }
 
 .cta-button-secondary {
-    background: var(--bg-secondary);
-    color: var(--primary-blue);
-    border: 2px solid var(--primary-blue);
+    background: transparent;
+    color: white;
+    border: 2px solid white;
 }
 
 .cta-button-secondary:hover {
-    background: var(--primary-blue);
+    background: rgba(255, 255, 255, 0.1);
     color: white;
     transform: translateY(-2px);
+    border-color: white;
 }
 
 /* ===== SERVICES SECTION ===== */
