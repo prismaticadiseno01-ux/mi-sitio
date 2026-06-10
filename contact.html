@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | UXforia - Carolina Vargas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="container">
+        <div class="navbar-left">
+            <div class="logo">UXforia</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="work.html">My Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="theme-toggle-wrapper">
+            <span class="theme-emoji" id="themeEmoji">🌙</span>
+            <label class="theme-toggle-label" title="Toggle theme">
+                <input type="checkbox" id="themeToggle">
+                <span class="toggle-switch"></span>
+            </label>
+        </div>
+    </div>
+</nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Let's Create Something Amazing</h1>
+            <p>Tell me about your project and I'll get back to you within 48 hours</p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">What are you looking for? *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="branding">Brand Design</option>
+                            <option value="ux-ui">UX/UI Design</option>
+                            <option value="strategy">Design Strategy</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="projectType">Project Type *</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="projectType" value="logo">
+                                <span>Logo Design</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="projectType" value="brand-identity">
+                                <span>Brand Identity</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="projectType" value="website">
+                                <span>Website Design</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="projectType" value="app">
+                                <span>App Design</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="projectType" value="packaging">
+                                <span>Packaging Design</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="projectType" value="other">
+                                <span>Other</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget">Estimated Budget</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select budget range</option>
+                            <option value="2000-5000">$2,000 - $5,000</option>
+                            <option value="5000-10000">$5,000 - $10,000</option>
+                            <option value="10000-20000">$10,000 - $20,000</option>
+                            <option value="20000+">$20,000+</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="timeline">Timeline *</label>
+                        <select id="timeline" name="timeline" required>
+                            <option value="">Select timeline</option>
+                            <option value="asap">ASAP (1-2 weeks)</option>
+                            <option value="1month">1 Month</option>
+                            <option value="2-3months">2-3 Months</option>
+                            <option value="3months+">3+ Months</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Tell me about your project *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="cta-button">Send My Brief</button>
+                </form>
+
+                <div class="contact-info">
+                    <h2>Quick Info</h2>
+                    <div class="info-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:carolina@uxforia.com">carolina@uxforia.com</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h3>LinkedIn</h3>
+                        <p><a href="https://linkedin.com" target="_blank">linkedin.com/in/carolinvargas</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Behance</h3>
+                        <p><a href="https://behance.net" target="_blank">behance.net/carolinvargas</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Response Time</h3>
+                        <p>Within 48 hours</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 UXforia by Carolina Vargas. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
